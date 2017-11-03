@@ -1,0 +1,8 @@
+body{
+  background-image: url("../images/meme2.png");
+}
+.start{
+  text-align: center;
+  background-color: brown;
+  padding: 70px;
+}

@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pig Dice</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <div class="start">
-  <h1>Pig Dice</h1>
-  </div>
-  <form id="new-contact">
-              <div class="form-group">
-                <label for="new-player-one">Player One</label>
-                <input type="text" class="form-control" id="new-first-name">
-              </div>
-              <div class="form-group">
-                <label for="new-player-two">Player Two</label>
-                <input type="text" class="form-control" id="new-last-name">
-              </div>
 
-              <button type="submit" class="btn">Enter</button>
-            </form>
-    <script src="js/jquery-3.2.1.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/scripts.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Pig Dice</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="start">
+    <h1>Pig Dice</h1>
+  </div>
+  <form id="new-players">
+    <div class="form-group">
+      <label for="new-player-one">Player One</label>
+      <input type="text" class="form-control" id="new-player-one">
+    </div>
+    <div class="form-group">
+      <label for="new-player-two">Player Two</label>
+      <input type="text" class="form-control" id="new-player-two">
+    </div>
+
+    <button type="submit" class="btn">Enter</button>
+  </form>
+  <div class="container">
+  <div class="row">
+    <div class="game">
+      <div class="col-md-6">
+        <h2>Player-One</h2>
+        <button type="submit" class="btn-roll">Roll</button>
+        <button type="submit" class="btn-hold">Hold</button>
+      </div>
+      <div class="col-md-6">
+        <h2>Player-Two</h2>
+        <button type="submit" class="btn-roll">Roll</button>
+        <button type="submit" class="btn-hold">Hold</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

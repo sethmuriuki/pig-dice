@@ -6,21 +6,15 @@
 
 ## Description
 
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+{This is a game of which two roll a die in turns.If a player rolls and gets any number other than one the player gets to play again the cumulative results are added.The player can either roll of which he gets to go on rolling until he gets a 1 which grants the other player a turn,or the player could hold and all the points would be added and awarded to the player }
 
 ## Setup/Installation Requirements
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+* clone the repository
 
 ## Known Bugs
 
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+{No issues yet still in the works }
 
 ## Technologies Used
 

@@ -1,8 +1,15 @@
-body{
+#home {
   background-image: url("../images/meme2.png");
 }
-.start{
+
+.start {
   text-align: center;
   background-color: brown;
-  padding: 70px;
+  padding: 50px;
+}
+
+.pig {
+  color: black;
+  text-align: left;
+  font-weight: bold;
 }

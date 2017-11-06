@@ -29,15 +29,20 @@
     <div class="game">
       <div class="row">
         <div class="col-lg-6">
-          <h2 id ="playerone"></h2>
-          <button type="button" class="btn-roll">Roll</button>
-          <button type="button" class="btn-hold">Hold</button>
-          <h4>roll:</h4>
-          <h4>Turn Score:</h4>
-          <h4>Total Score:</h4>
+          <h2 id="playerone">Player:</h2>
+          <div class="well" id="well-play1">
+            <button type="button" class="btn-roll">Roll</button>
+            <button type="button" class="btn-hold">Hold</button>
+          </div>
+          <h4>roll:<span class="player1-roll-number"></span></h4>
+          <h4>Turn Score:<span class="player1-turn-score"></span></h4>
+          <h4>Total Score:<span class="player1-total-score"></span></h4>
+          <div class="player1-scored1" style="display:none">
+            <h2>YOU ROLLED A 1</h2>
+          </div>
         </div>
         <div class="col-lg-6">
-          <h2 id= "playertwo">Player:</h2>
+          <h2 id="playertwo">Player:</h2>
           <button type="button" class="btn-roll">Roll</button>
           <button type="button" class="btn-hold">Hold</button>
           <h4>roll:</h4>

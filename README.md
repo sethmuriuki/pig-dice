@@ -25,7 +25,7 @@
 
 ## Technologies Used
 
-{html, css, javascript}
+{html, css, javascript, jquery, bootstrap}
 
 ## Support and contact details
 

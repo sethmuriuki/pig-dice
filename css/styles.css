@@ -1,5 +1,7 @@
 #home {
   background-image: url("../images/meme2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .start {
@@ -12,4 +14,7 @@
   color: black;
   text-align: left;
   font-weight: bold;
+}
+.game{
+  background-color: red;
 }

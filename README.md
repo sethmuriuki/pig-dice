@@ -1,6 +1,6 @@
 # {Pig Dice}
 
-#### {Brief description of application}, {3rd nov 2017}
+#### {A simple game of random numbers}, {3rd nov 2017}
 
 #### By **{Seth muriuki}**
 

@@ -21,3 +21,7 @@ Player.prototype.score = function() {
   this.totalScore = this.turnScore + this.totalScore;
   this.turnScore = 0;
 }
+// userinterface
+$(".btn-new").click(function(event){
+  $("#new-players").show();
+});

@@ -16,5 +16,12 @@
   font-weight: bold;
 }
 .game{
-  background-color: red;
+  background-color: #821818;
+  padding: 80px;
+  color: black;
+}
+label{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }

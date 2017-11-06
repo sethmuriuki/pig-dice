@@ -5,6 +5,7 @@ function Player(playerName, turnScore, totalScore) {
   this.turnScore = turnScore;
   this.totalScore = totalScore;
 }
+//adds rollValue to give turn score
 Player.prototype.roll = function() {
   var diceValues = [1, 2, 3, 4, 5, 6];
   var rollValue = diceValues[Math.floor(Math.random() * diceValues.length)];
@@ -14,4 +15,9 @@ Player.prototype.roll = function() {
     this.turnScore = this.turnScore + rollValue;
   };
   return rollValue;
+}
+//calculates total score based on turn score
+Player.prototype.score = function() {
+  this.totalScore = this.turnScore + this.totalScore;
+  this.turnScore = 0;
 }

@@ -25,3 +25,11 @@ Player.prototype.score = function() {
 $(".btn-new").click(function(event){
   $("#new-players").show();
 });
+$(".btn").click(function(event){
+  event.preventDefault();
+
+  var player1 =$("#new-player-one").val();
+  var player2=$("#new-player-two").val();
+  $("#playerone").text(player1);
+  $("#playertwo").text(player2);
+});

@@ -1,12 +1,12 @@
 #home {
-  background-image: url("../images/meme2.png");
+  background-image: url("../images/dice.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .start {
   text-align: center;
-  background-color: brown;
+  background-color: #495057;
   padding: 60px;
 }
 
@@ -16,12 +16,12 @@
   font-weight: bold;
 }
 .game{
-  background-color: #821818;
+  background-color: #495057;
   padding: 80px;
   color: black;
 }
 label{
-  color: black;
+  color: navajowhite;
   font-weight: bold;
   font-size: 20px;
 }

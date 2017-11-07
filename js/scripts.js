@@ -24,6 +24,7 @@ Player.prototype.score = function() {
 // userinterface
 $(".btn-new").click(function(event) {
   $("#new-players").show();
+  $("#pig").hide(500);
 });
 $(".btn").click(function(event) {
   event.preventDefault();

@@ -30,7 +30,7 @@
       <input type="text" class="form-control" id="new-player-two">
     </div>
 
-    <button type="click" class="btn">Enter</button>
+    <button type="submit" id="btn">Enter</button>
   </form>
   <div class="container">
     <div class="game">
@@ -38,8 +38,8 @@
         <div class="col-lg-6">
           <h2 id="playerone">Player:</h2>
           <div class="well" id="well-play1">
-            <button type="button" class="btn-roll">Roll</button>
-            <button type="button" class="btn-hold">Hold</button>
+            <button type="click" id="btn-roll">Roll</button>
+            <button type="click" id="btn-hold">Hold</button>
           </div>
           <h4>roll:<span class="player1-roll-number"></span></h4>
           <h4>Turn Score:<span class="player1-turn-score"></span></h4>
@@ -50,11 +50,13 @@
 
         </div>
         <div class="player1-victory">CONGRATULATIONS</div>
-        <div class="player2-victory"></div>
+        <div class="player2-victory">CONGRATULATIONS</div>
         <div class="col-lg-6">
           <h2 id="playertwo">Player:</h2>
-          <button type="button" class="btn-roll">Roll</button>
-          <button type="button" class="btn-hold">Hold</button>
+          <div id="well-play2">
+            <button type="click" id="btn-roll1">Roll</button>
+            <button type="click" id="btn-hold1">Hold</button>
+          </div>
           <h4>roll:<span class="player2-roll-number"></h4>
           <h4>Turn Score:<span class="player2-turn-score"></h4>
           <h4>Total Score:<span class="player2-total-score"></h4>

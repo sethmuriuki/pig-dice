@@ -28,3 +28,9 @@ label{
 #new-players{
   display: none;
 }
+.player1-victory{
+  display: none;
+}
+.player2-victory{
+  display: none;
+}

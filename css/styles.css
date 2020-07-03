@@ -1,20 +1,4 @@
-#home {
-  background-image: url("../images/dice.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-.start {
-  text-align: center;
-  background-color: #495057;
-  padding: 60px;
-}
-
-.pig {
-  color: navajowhite;
-  text-align: left;
-  font-weight: bold;
-}
 .game{
   background-color: #495057;
   padding: 80px;

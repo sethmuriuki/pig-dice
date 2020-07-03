@@ -6,35 +6,68 @@
   <title>Pig Dice</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
 </head>
 
 <body id="home">
   <div class="start">
     <h1>Pig Dice</h1>
   </div>
+  <div class="uk-container">
   <div class="pig">
-    <h2>Rules:</h2>
-    <p>1)If a player rolls <b><em>1</em></b> they score <b><em>0</em></b> and lose their turn</p>
-    <p>2)If a player rolls any other number other than <b><em>1</em></b> it is added to <br>their turn total and the player continues</p>
-    <p>3)If a player chooses to hold, their turn total is added to their score <br>and the next player gets a turn</p>
-    <p>4)The first player to score <b><em>100</em></b> points wins</p>
+    <div class="uk-card uk-card-default uk-card-small uk-card-body">
+      <h3 class="uk-card-title">Rules:</h3>
+      <p>1)If a player rolls <b><em>1</em></b> they score <b><em>0</em></b> and lose their turn</p>
+      <p>2)If a player rolls any other number other than <b><em>1</em></b> it is added to <br>their turn total and the player continues</p>
+      <p>3)If a player chooses to hold, their turn total is added to their score <br>and the next player gets a turn</p>
+      <p>4)The first player to score <b><em>100</em></b> points wins</p>
+      <button type="click" class="btn btn-outline-primary btn-rounded waves-effect" id="btn-new">Play</button>
+    </div>   
+     
   </div>
-  <button type="click" class="btn-new">Play </button>
-  <form id="new-players">
-    <div class="form-group">
+  
+  <form id="new-players"> 
+    <div class="uk-card uk-card-default uk-card-small uk-width-2-3 uk-card-body">
+      <h3 class="uk-card-title uk-align-center">Enter Player Names</h3>
+    <div class="md-form form-lg">
+      <input type="text" id="new-player-one" class="form-control form-control-lg">
       <label for="new-player-one">Player One</label>
-      <input type="text" class="form-control" id="new-player-one">
     </div>
-    <div class="form-group">
+    <div class="md-form form-lg">
+      <input type="text" id="new-player-two" class="form-control form-control-lg">
       <label for="new-player-two">Player Two</label>
-      <input type="text" class="form-control" id="new-player-two">
     </div>
-
-    <button type="submit" id="btn">Enter</button>
+    <div></div>
+    <button type="submit" class="btn btn-outline-primary btn-rounded waves-effect  uk-align-center" id="btn-submit">Submit</button>
+  </div>
   </form>
+
   <div class="container">
-    <div class="game">
-      <div class="row">
+    <div id="game">
+      <div class="uk-card uk-card-hover  uk-position-center uk-width-2-3 uk-card-body">
+      
         <div class="col-lg-6">
           <h2 id="playerone">Player:</h2>
           <div class="well" id="well-play1">
@@ -65,8 +98,10 @@
           </div>
         </div>
       </div>
-    </div>
+  
   </div>
+  </div>
+</div>
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/scripts.js"></script>
 </body>

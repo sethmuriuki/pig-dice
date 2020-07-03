@@ -26,6 +26,9 @@ Player.prototype.score = function() {
 }
 // userinterface
 
+$(document).ready(function(){
+  $("#game").hide();
+});
 var player1Name= $("#new-player-one").val();
 var player2Name= $("#new-player-two").val();
 
@@ -34,10 +37,18 @@ var player2 = new Player(player2Name,0,0);
 
 
 
-$(".btn-new").click(function(event) {
+$("#btn-new").click(function(event) {
   event.preventDefault();
   $("#new-players").show();
+  $("#btn-new").hide(500);
   $(".pig").hide(500);
+});
+
+$("#btn-submit").click(function(event) {
+  event.preventDefault();
+  $("#game").show();
+  $("#btn-submit").hide(500);
+  $("#new-players").hide(500);
 });
 
 $("#new-players").submit(function(event) {
